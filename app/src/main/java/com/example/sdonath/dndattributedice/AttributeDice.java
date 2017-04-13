@@ -11,12 +11,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class AttributeDice extends AppCompatActivity {
 
 
     private TextView[] rollResults = new TextView[10];
     private Button[] rollButtons = new Button[10];
-    private int[] scores = new int[10];
+    private int[] scores = new int[7];
+    private int[][] dice = new int[7][4];
+    private Random rand;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,14 +57,30 @@ public class AttributeDice extends AppCompatActivity {
         rollButtons[4] = (Button) findViewById(R.id.buttonDice5);
         rollButtons[5] = (Button) findViewById(R.id.buttonDice6);
         rollButtons[6] = (Button) findViewById(R.id.buttonDice7);
+
+        rand = new Random();
+
+    }
+    public int roll(Random r){
+        return r.nextInt(6)+1;
     }
     public void rollDice(View v){
         int buttonTag = Integer.parseInt(v.getTag().toString());
-        rollResults[buttonTag-1].setText("clicked");
+        dice[buttonTag-1][0] = roll(rand);
+        dice[buttonTag-1][1] = roll(rand);
+        dice[buttonTag-1][2] = roll(rand);
+        dice[buttonTag-1][3] = roll(rand);
+        int diceResultInt = dice[buttonTag-1][0] + dice[buttonTag-1][1] + dice[buttonTag-1][2] + dice[buttonTag-1][3];
+        String diceResultString = Integer.toString(diceResultInt);
+        scores[buttonTag-1] =diceResultInt;
+        rollResults[buttonTag-1].setText(diceResultString);
+
     }
     public void rollAllDice(View v){
-        for(int i = 0; i<7; i++){
-            rollResults[i].setText("clicked");
+        for(int i = 0; i<7; i++){ //gehe von 0 bis 6
+            scores[i] = rand.nextInt(6)+1; //score hat die größe 0 bis 6
+            String RandomValue = Integer.toString(scores[i]);
+            rollResults[i].setText(RandomValue);
         }
     }
 
