@@ -38,13 +38,13 @@ public class AttributeDice extends AppCompatActivity {
     /*for(int i = 0; i<7;i++){
         scores[i] = 0;
     }*/
-        rollResults[0] = (TextView) findViewById(R.id.textViewDiceScore1);
-        rollResults[1] = (TextView) findViewById(R.id.textViewDiceScore2);
-        rollResults[2] = (TextView) findViewById(R.id.textViewDiceScore3);
-        rollResults[3] = (TextView) findViewById(R.id.textViewDiceScore4);
-        rollResults[4] = (TextView) findViewById(R.id.textViewDiceScore5);
-        rollResults[5] = (TextView) findViewById(R.id.textViewDiceScore6);
-        rollResults[6] = (TextView) findViewById(R.id.textViewDiceScore7);
+        rollResults[0] = (TextView) findViewById(R.id.textViewRollDice1);
+        rollResults[1] = (TextView) findViewById(R.id.textViewRollDice2);
+        rollResults[2] = (TextView) findViewById(R.id.textViewRollDice3);
+        rollResults[3] = (TextView) findViewById(R.id.textViewRollDice4);
+        rollResults[4] = (TextView) findViewById(R.id.textViewRollDice5);
+        rollResults[5] = (TextView) findViewById(R.id.textViewRollDice6);
+        rollResults[6] = (TextView) findViewById(R.id.textViewRollDice7);
 
         rollButtons[0] = (Button) findViewById(R.id.buttonDice1);
         rollButtons[1] = (Button) findViewById(R.id.buttonDice2);
