@@ -18,7 +18,7 @@ import java.util.Random;
 
 public class AttributeDice extends AppCompatActivity {
 
-
+    //
     private TextView[] rollResults = new TextView[7];
     private Button[] rollButtons = new Button[7];
     private int[] scores = new int[7];
