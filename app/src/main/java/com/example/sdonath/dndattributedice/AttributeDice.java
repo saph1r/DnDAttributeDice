@@ -19,8 +19,8 @@ import java.util.Random;
 public class AttributeDice extends AppCompatActivity {
 
 
-    private TextView[] rollResults = new TextView[10];
-    private Button[] rollButtons = new Button[10];
+    private TextView[] rollResults = new TextView[7];
+    private Button[] rollButtons = new Button[7];
     private int[] scores = new int[7];
     private int[][] dice = new int[7][4];
     private Random rand;
