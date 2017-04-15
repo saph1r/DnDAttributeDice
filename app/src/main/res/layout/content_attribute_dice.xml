@@ -496,10 +496,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/holo_orange_light"
-            android:onClick="SeeAttributes"
-            android:text="@string/SeeAttributes"
+            android:onClick="showAttributes"
+            android:text="@string/ShowAttributes"
             tools:layout_editor_absoluteX="199dp"
-            tools:layout_editor_absoluteY="407dp"/>
+            tools:layout_editor_absoluteY="407dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

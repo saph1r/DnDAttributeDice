@@ -1,5 +1,6 @@
 package com.example.sdonath.dndattributedice;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -203,6 +204,11 @@ public class AttributeDice extends AppCompatActivity {
             v.setTag(i+1);
             rollDice(v);
         }
+    }
+    public void showAttributes(View v)
+    {
+        Intent intent = new Intent(this, ShowAttributes.class);
+        startActivity(intent);
     }
 
     @Override

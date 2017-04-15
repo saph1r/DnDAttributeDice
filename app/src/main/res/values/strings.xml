@@ -5,7 +5,6 @@
     <string name="ScoreOneDice">Score</string>
     <string name="DiceOneDice">Dice</string>
     <string name="RollAll">Roll All</string>
-    <string name="SeeAttributes">See Attributes</string>
     <string name="dice_1">Dice 1</string>
     <string name="dice_2">Dice 2</string>
     <string name="dice_3">Dice 3</string>
@@ -13,4 +12,6 @@
     <string name="dice_5">Dice 5</string>
     <string name="dice_6">Dice 6</string>
     <string name="dice_7">Dice 7</string>
+    <string name="ShowAttributes">Show Attributes</string>
+    <string name="title_activity_show_attributes">ShowAttributes</string>
 </resources>
